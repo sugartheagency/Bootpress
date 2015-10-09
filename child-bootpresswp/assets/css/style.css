@@ -5,10 +5,71 @@
 /* 29 July 2013 */
 
 body {
-	padding-top: 60px;
+	/*padding-top: 60px;*/
 }
-.admin-bar .navbar { margin-top: 28px;}
+
+.admin-bar .navbar { /*margin-top: 28px;*/}
 .center {text-align: center; margin-left: auto; margin-right: auto; margin-bottom: auto; margin-top: auto;}
+
+/* Styles for mobile nav modal overlay*/
+
+.navbar-toggle {
+  float: right !important;
+  margin-left: 15px;
+  margin-right: 0;
+}
+
+.modal-nav-content {
+  width: 100%;
+  height: auto;
+}
+
+.modal-nav-body {
+  margin-top: 100px; 
+}
+
+.modal-nav-body ul {
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.modal-nav-body ul li {
+  text-align: center;
+  font-size: 130%;
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+.modal-nav-body a{
+  color: #fff !important;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.modal-nav-body a:hover{
+  text-decoration: none;
+}
+
+.modal-backdrop {
+   background-color: #003d79; /* Change the background colour on the overlay here */
+   opacity: 1 !important;
+   z-index: 999;
+}
+
+.close {
+    color: #fff; 
+    opacity: 1;
+    font-size: 40px;
+}
+
+.modal-header{
+  border-bottom: 0;
+}
+
+/* End of overlay section */
 
 @media (min-width: 1200px) { 
 	/* Large Devices Desktop */

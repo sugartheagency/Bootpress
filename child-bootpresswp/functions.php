@@ -21,5 +21,13 @@ wp_enqueue_script( 'child-bootpresswp-script', get_stylesheet_directory_uri() .'
 }
 add_action( 'wp_enqueue_scripts', 'child_bootpresswp_loader', 200 );
 
+function register_my_menus() {
+  register_nav_menus(
+    array(
+      'main-menu' => __( 'Main Menu' )
+    )
+  );
+}
+add_action( 'init', 'register_my_menus' );
 
  ?>
